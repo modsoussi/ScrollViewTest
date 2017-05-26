@@ -16,8 +16,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        scrollView.contentSize = CGSize(width: 375, height: 1000)
+        //scrollView.contentSize = CGSize(width: 375, height: 1000)
         scrollView.isScrollEnabled = true
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        scrollView.contentSize = CGSize(width: 375, height: 1000)
     }
 
     override func didReceiveMemoryWarning() {
