@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ScrollViewTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u5n-Zy-II5">
+                                <rect key="frame" x="0.0" y="20" width="375" height="980"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ylX-Cj-OUp">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="980"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vp1-kc-g2s">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="313"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="1" green="0.16393658843936265" blue="0.089422621720369855" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t0d-TK-rda">
+                                                <rect key="frame" x="0.0" y="321" width="375" height="313"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.19513080680314199" green="0.25977905209501406" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eLk-70-RBA">
+                                                <rect key="frame" x="0.0" y="642" width="375" height="313"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.17463363479588079" green="1" blue="0.16147765594116603" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ylX-Cj-OUp" firstAttribute="leading" secondItem="u5n-Zy-II5" secondAttribute="leading" id="3hw-yU-MaS"/>
+                                    <constraint firstItem="ylX-Cj-OUp" firstAttribute="centerY" secondItem="u5n-Zy-II5" secondAttribute="centerY" id="916-Sz-5X2"/>
+                                    <constraint firstItem="ylX-Cj-OUp" firstAttribute="top" secondItem="u5n-Zy-II5" secondAttribute="top" id="AL1-EN-FIg"/>
+                                    <constraint firstAttribute="trailing" secondItem="ylX-Cj-OUp" secondAttribute="trailing" id="RN8-1u-8gD"/>
+                                    <constraint firstAttribute="bottom" secondItem="ylX-Cj-OUp" secondAttribute="bottom" id="hJT-vr-B82"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="u5n-Zy-II5" secondAttribute="bottom" id="69f-Pu-RLi"/>
+                            <constraint firstAttribute="trailing" secondItem="u5n-Zy-II5" secondAttribute="trailing" id="A7v-HK-iug"/>
+                            <constraint firstItem="ylX-Cj-OUp" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="O2d-f4-VYz"/>
+                            <constraint firstItem="u5n-Zy-II5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="TKz-0q-R6K"/>
+                            <constraint firstItem="u5n-Zy-II5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Tcd-ro-dMC"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="1000"/>
+                    <connections>
+                        <outlet property="scrollView" destination="u5n-Zy-II5" id="ybI-pK-E21"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="138.53073463268368"/>
+        </scene>
+    </scenes>
+</document>
